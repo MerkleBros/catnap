@@ -1,0 +1,15 @@
+{
+  "name": "catnap",
+  "version": "1.0.0",
+  "description": "An app for resting your eyes and napping with cats",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/MerkleBros/catnap",
+  "author": "Patrick McCarver",
+  "devDependencies": {},
+  "dependencies": {
+    "electron": "^5.0.1"
+  }
+}
