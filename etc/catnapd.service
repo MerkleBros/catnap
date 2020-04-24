@@ -1,0 +1,11 @@
+[Unit]
+Description=Run the catnap app
+After=default.target
+
+[Service]
+Restart=on-failure
+RemainAfterExit=yes
+ExecStart=/home/patrick/recurse/catnap/bin/catnap.sh
+
+[Install]
+WantedBy=default.target
