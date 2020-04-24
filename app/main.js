@@ -14,7 +14,7 @@ function start() {
   let win = createWindow();
   setTimeout(() => {
     win.close()
-  }, 5000)
+  }, 20000)
 }
 
 app.whenReady().then(start)
