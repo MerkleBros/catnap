@@ -15,7 +15,7 @@ The app is:
 
 ### Installation
 
-**🐈Catnap🐈** depends on `npm` and uses `systemd/systemctl` - a system service manager for Linux.
+**🐈Catnap🐈** depends on `npm` and optionally uses `systemd/systemctl` - a system service manager for Linux.
 
 Clone the repo, install Electron, and launch the app (the screen will fill and clear after 20 seconds):
 
@@ -27,8 +27,8 @@ git clone https://github.com/MerkleBros/catnap.git && cd catnap/app && npm insta
 
 There are three ways to run the app:
 1. Manually launch in `catnap/app` with `npm start`.
-2. A Bash script `catnap/bin/catnap.sh` will launch the app every twenty minutes.
-3. A `systemd` unit `catnap/etc/catnapd.service` can manage the Bash script with `systemctl`.
+2. A Bash script `catnap/bin/catnap.sh` will launch the app every twenty minutes. Run it with `./catnap.sh`.
+3. (On Ubuntu) A `systemd` unit `catnap/etc/catnapd.service` can manage the Bash script with `systemctl`.
 
 To use the `systemd` unit as a user unit, copy it to where `systemd` looks for unit files and reload `systemd` so that it finds the unit file. Then start the service and enable it on startup:
 
